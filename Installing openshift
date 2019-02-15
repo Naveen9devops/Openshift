@@ -1,0 +1,32 @@
+#Installing openshift is simple process for this you need some pre-requisites
+
+#Firstly you need to install the docker in your machine
+
+#After that download the openshift client edition in your machine follow below link to download
+#https://github.com/openshift/origin/releases
+unzip the openshift file
+
+#place the oc file in your machine's path to use the openshift
+#for linux mv oc /usr/local/bin
+#check openshift version by below command
+oc version
+
+#to use openshift for single cluster we need the minishift software and vm software
+#use this link to download minishift https://github.com/minishift/minishift/releases/tag/v1.31.0
+#place minishift also in your machine's path as above openshift's path
+#check minishift's version by
+minishift version
+
+for vm https://download.virtualbox.org/virtualbox/6.0.4/virtualbox-6.0_6.0.4-128413~Ubuntu~bionic_amd64.deb
+
+#start the minishift by
+minishift start --vm-driver VirtualBox
+
+# check minishift status
+minishift status
+
+#you will get one link to access the openshift by web ui
+
+#to access the applications and for deployments etc.. from cli you need to login in to openshift cli
+oc adm policy add-cluster-role-to-user cluster-admin system
+oc login -u system:admin # where system is username and admin is password for web ui also
