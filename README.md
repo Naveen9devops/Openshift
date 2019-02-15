@@ -1,1 +1,2 @@
 # Openshift
+Openshift is Platform as a service which is used to deploy the containerized application by single click. In other words OpenShift is a cloud development Platform as a Service (PaaS) developed by Red Hat. It is an open source development platform, which enables the developers to develop and deploy their applications on cloud infrastructure. It is very helpful in developing cloud-enabled services
